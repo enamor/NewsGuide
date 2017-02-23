@@ -19,6 +19,9 @@
 		B808F9D71E0254140016C933 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B808F9D61E0254140016C933 /* UIView+Extension.m */; };
 		B808F9DA1E026CDE0016C933 /* ZNBaseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B808F9D91E026CDE0016C933 /* ZNBaseListViewController.m */; };
 		B808F9DD1E026F890016C933 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B808F9DC1E026F890016C933 /* ListViewController.m */; };
+		B85A30D21E5EF14000C43458 /* PTETGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = B85A30D11E5EF14000C43458 /* PTETGuideView.m */; };
+		B85A30D51E5EF29300C43458 /* PTETMyInvitationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B85A30D41E5EF29300C43458 /* PTETMyInvitationController.m */; };
+		B85A30D81E5EF39A00C43458 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B85A30D71E5EF39A00C43458 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,12 @@
 		B808F9D91E026CDE0016C933 /* ZNBaseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNBaseListViewController.m; sourceTree = "<group>"; };
 		B808F9DB1E026F890016C933 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		B808F9DC1E026F890016C933 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		B85A30D01E5EF14000C43458 /* PTETGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTETGuideView.h; sourceTree = "<group>"; };
+		B85A30D11E5EF14000C43458 /* PTETGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTETGuideView.m; sourceTree = "<group>"; };
+		B85A30D31E5EF29300C43458 /* PTETMyInvitationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTETMyInvitationController.h; sourceTree = "<group>"; };
+		B85A30D41E5EF29300C43458 /* PTETMyInvitationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTETMyInvitationController.m; sourceTree = "<group>"; };
+		B85A30D61E5EF39A00C43458 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "../UIView+Extension.h"; sourceTree = "<group>"; };
+		B85A30D71E5EF39A00C43458 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "../UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,9 @@
 		B808F9B11E024FD90016C933 /* NewsGuide */ = {
 			isa = PBXGroup;
 			children = (
+				B85A30D31E5EF29300C43458 /* PTETMyInvitationController.h */,
+				B85A30D41E5EF29300C43458 /* PTETMyInvitationController.m */,
+				B85A30CF1E5EF14000C43458 /* GuideView */,
 				B808F9C91E0250780016C933 /* NewsFramework */,
 				B808F9B51E024FD90016C933 /* AppDelegate.h */,
 				B808F9B61E024FD90016C933 /* AppDelegate.m */,
@@ -131,6 +143,17 @@
 				B808F9CF1E0250780016C933 /* ZNChannelView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		B85A30CF1E5EF14000C43458 /* GuideView */ = {
+			isa = PBXGroup;
+			children = (
+				B85A30D61E5EF39A00C43458 /* UIView+Extension.h */,
+				B85A30D71E5EF39A00C43458 /* UIView+Extension.m */,
+				B85A30D01E5EF14000C43458 /* PTETGuideView.h */,
+				B85A30D11E5EF14000C43458 /* PTETGuideView.m */,
+			);
+			path = GuideView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,11 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85A30D21E5EF14000C43458 /* PTETGuideView.m in Sources */,
 				B808F9D01E0250780016C933 /* ZNChannelLabel.m in Sources */,
 				B808F9BA1E024FD90016C933 /* ViewController.m in Sources */,
 				B808F9DD1E026F890016C933 /* ListViewController.m in Sources */,
 				B808F9D11E0250780016C933 /* ZNChannelView.m in Sources */,
 				B808F9DA1E026CDE0016C933 /* ZNBaseListViewController.m in Sources */,
+				B85A30D81E5EF39A00C43458 /* UIView+Extension.m in Sources */,
+				B85A30D51E5EF29300C43458 /* PTETMyInvitationController.m in Sources */,
 				B808F9D71E0254140016C933 /* UIView+Extension.m in Sources */,
 				B808F9D41E0250D30016C933 /* ZNBaseViewController.m in Sources */,
 				B808F9B71E024FD90016C933 /* AppDelegate.m in Sources */,
@@ -367,6 +393,7 @@
 				B808F9C81E024FD90016C933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

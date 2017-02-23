@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "PTETMyInvitationController.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self p_setupWindow];
     // Override point for customization after application launch.
     return YES;
 }
@@ -46,6 +49,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)p_setupWindow {
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    _window.backgroundColor = [UIColor whiteColor];
+    UITabBarController *rootVc = [[UITabBarController alloc] init];
+    [rootVc addChildViewController:[ViewController new]];
+    [rootVc addChildViewController:[PTETMyInvitationController new]];
+    UINavigationController *baseNav = [[UINavigationController alloc]initWithRootViewController:rootVc];
+    _window.rootViewController = baseNav;
+    [_window makeKeyAndVisible];
+}
+
 
 
 @end

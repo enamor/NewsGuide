@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ListViewController.h"
+#import "PTETMyInvitationController.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.translucent = NO;
+    self.title = @"新闻";
     self.data = @[@"ssss",@"sssss",@"dfefefefefe",@"中华人民",@"中华人民",@"中华人民",@"中华人民",@"中华人民",@"中华人民",@"中华人民",@"中华人民"];
     self.titles = self.data;
     // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +44,10 @@
     [cell addSubview:vc.view];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self presentViewController:[PTETMyInvitationController new] animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
